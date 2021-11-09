@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import TodoItem from "./TodoItem";
+import axios from "axios";
 import './style.css';
 
 class TodoList extends Component {
@@ -14,8 +15,8 @@ class TodoList extends Component {
     this.handleBtnClick = this.handleBtnClick.bind(this);
     this.handleItemDelete = this.handleItemDelete.bind(this);
   }
-  handleInputChange(e) {
-    const value = e.target.value;  //setState中为函数时，方式更换为异步，需如此解决该问题。使用函数可以得到性能提升
+  handleInputChange() {
+    const value = this.input.value;  //setState中为函数时，方式更换为异步，需如此解决该问题。使用函数可以得到性能提升
     this.setState(() => ({
         inputValue: value
       }))
@@ -34,6 +35,17 @@ class TodoList extends Component {
       return {list};
     })
   }
+
+  componentDidMount() {
+    axios.get('/api/todolist')
+      .then((res) => {
+        this.setState(() => ({
+          list: [...res.data]
+        }))
+      })
+      .catch(() => {alert('error')})
+  }
+
   getTodoItem() {
     return this.state.list.map((item, index) => {
       return(
@@ -58,6 +70,7 @@ class TodoList extends Component {
           className = 'input'
           value = {this.state.inputValue}
           onChange = {this.handleInputChange}
+          ref = {(input) => {this.input =  input}}
         /> 
         <button onClick = {this.handleBtnClick}>提交</button>
       </div>
