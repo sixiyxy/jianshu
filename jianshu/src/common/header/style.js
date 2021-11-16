@@ -21,6 +21,56 @@ import logoPic from '../../statics/logo.png';
 // 	}
 // `
 
+export const SearchInfoList = styled.div`
+	overflow: hidden;
+`;
+
+export const SearchInfoItem = styled.a`
+	display: block;
+	float: left;
+	line-height: 20px;
+	padding: 0 5px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	font-size: 12px;
+	border: 1px solid #ddd;
+	color: #787878;
+	border-radius: 3px;
+`;
+
+export const SearchInfoSwitch = styled.span`
+	float: right;
+	font-size: 13px;
+	cursor: pointer;
+	.spin {
+		display: block;
+		float: left;
+		font-size: 12px;
+		margin-right: 2px;
+		transition: all .2s ease-in;
+		transform-origin: center center;
+	}
+`;
+
+export const SearchInfoTitle = styled.div`
+	margin-top: 20px;
+	margin-bottom: 15px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #969696;
+`;
+
+export const SearchInfo = styled.div`
+	position: absolute;
+	left: 0;
+	top: 56px;
+	width: 240px;
+	padding: 0 20px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+	background: #fff;
+`;
+
+
 export const HeaderWrapper = styled.div`
     z-index: 1;
     position: relative;
@@ -51,18 +101,6 @@ export const Nav = styled.div`
 export const SearchWrapper = styled.div`
 	position: relative;
 	float: left;
-	.slide-enter {
-		transition: all .2s ease-out;
-	}
-	.slide-enter-active {
-		width: 240px;
-	}
-	.slide-exit {
-		transition: all .2s ease-out;
-	}
-	.slide-exit-active {
-		width: 160px;
-	}
 	.iconfont {
 		position: absolute;
 		rigth: 5px;
