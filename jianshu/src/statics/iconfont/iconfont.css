@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "iconfont"; /* Project id 2939810 */
-    src: url('./iconfont.eot?t=1636979146060'); /* IE9 */
-    src: url('./iconfont.eot?t=1636979146060#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('./iconfont.woff?t=1636979146060') format('woff'),
-        url('./iconfont.ttf?t=1636979146060') format('truetype'),
-        url('./iconfont.svg?t=1636979146060#iconfont') format('svg');
+  font-family: "iconfont"; /* Project id 2939810 */
+  src: url('iconfont.eot?t=1637127528222'); /* IE9 */
+  src: url('iconfont.eot?t=1637127528222#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('iconfont.woff?t=1637127528222') format('woff'),
+       url('iconfont.ttf?t=1637127528222') format('truetype'),
+       url('iconfont.svg?t=1637127528222#iconfont') format('svg');
 }
 
 .iconfont {

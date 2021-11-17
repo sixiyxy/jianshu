@@ -47,7 +47,7 @@ export const SearchInfoSwitch = styled.span`
 		float: left;
 		font-size: 12px;
 		margin-right: 2px;
-		transition: all .2s ease-in;
+		transition: all .3s ease-in;
 		transform-origin: center center;
 	}
 `;
@@ -101,18 +101,20 @@ export const Nav = styled.div`
 export const SearchWrapper = styled.div`
 	position: relative;
 	float: left;
-	.iconfont {
+	.zoom {
 		position: absolute;
-		rigth: 5px;
+		right: 5px;
 		bottom: 5px;
 		width: 30px;
 		line-height: 30px;
-		text-align: center
-		border-radius: 19px;
-		
+		border-radius: 15px;
+		text-align: center;
+		&.focused {
+			background: #777;
+			color: #fff;
+		}
 	}
 `;
-
 
 export const NavItem = styled.div`
 	line-height: 56px;
