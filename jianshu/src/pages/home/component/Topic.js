@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { TopicWrapper, TopicItem } from '../style'
 import { connect } from 'react-redux';
-import { NavItem } from "../../../common/header/style";
+
 
 class Topic extends Component  {
   render() {
@@ -17,7 +17,7 @@ class Topic extends Component  {
                 src={item.get('imgUrl')}
                 alt=''
               />
-                {item.get('title')}
+              {item.get('title')}
               </TopicItem>
             )
           })
