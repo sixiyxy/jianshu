@@ -12,7 +12,6 @@ import { CSSTransition } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { actionCreators } from './store';
 import { Link } from 'react-router-dom'
-import { logout } from "../../pages/login/store/actionCreators";
 import { actionCreators as loginActionCreators } from '../../pages/login/store'
 
 class Header extends Component {

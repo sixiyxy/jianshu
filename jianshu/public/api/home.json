@@ -9,6 +9,10 @@
 			"id": 2,
 			"title": "手绘",
 			"imgUrl": "//upload.jianshu.io/collections/images/21/20120316041115481.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+		}, {
+			"id": 3,
+			"title": "青春",
+			"imgUrl": "https://upload.jianshu.io/collections/images/20/%E5%9B%BE.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144/format/webp"
 		}],
 		"articleList": [{
 			"id": 1,
@@ -33,10 +37,16 @@
 		}],
 		"recommendList": [{
 			"id": 1,
-			"imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-3-7123fd94750759acf7eca05b871e9d17.png"
+			"imgUrl": "../recommend1.png"
 		}, {
 			"id": 2,
-			"imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
+			"imgUrl": "../recommend2.png"
+		}, {
+			"id": 3,
+			"imgUrl": "../recommend3.png"
+		}, {
+			"id": 4,
+			"imgUrl": "../recommend4.png"
 		}]
 	}
 }

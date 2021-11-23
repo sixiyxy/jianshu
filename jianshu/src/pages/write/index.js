@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Navigate } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 class Write extends PureComponent {
@@ -10,7 +10,7 @@ class Write extends PureComponent {
 				<div>写文章页面</div>
 			)
 		}else {
-			return <Navigate  to='/login'/>
+			return <Redirect  to='/login'/>
 		}
 	}
 }

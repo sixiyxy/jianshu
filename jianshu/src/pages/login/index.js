@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import { connect } from 'react-redux'
 import { LoginWrapper, LoginBox, Input, Button} from './style'
 import { actionCreators } from './store'
-import { Navigate } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 class Login extends PureComponent  {
     render() {
@@ -18,7 +18,7 @@ class Login extends PureComponent  {
                 </LoginWrapper>
             ) 
         }else {
-            return <Navigate to='/'/>
+            return <Redirect to='/'/>
         }
     }
 }
